@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*  scrollbar */
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+	margin-bottom: 8px;
+}
+
+/* 모바일에서 세로방향 터치불가 fix */
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_touch_action,
+.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox {
+	height: auto;
+	-ms-touch-action: pan-x;
+	touch-action: pan-x;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox.mCSB_horizontal {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+
+/* 가로 스크롤 테이블 */
+.mCSB_container {
+	width: 100% !important;
+}
+.scrollx_tbl_xs {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xs .mCSB_container {
+	min-width: 500px !important;
+}
+.scrollx_tbl_xs table{
+	min-width: 500px;
+}
+.scrollx_tbl_sm {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_sm .mCSB_container {
+	min-width: 600px !important;
+}
+.scrollx_tbl_sm table{
+	width: 100%;
+	min-width: 600px;
+}
+.scrollx_tbl_md{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_md .mCSB_container {
+	min-width: 800px !important;
+}
+.scrollx_tbl_md table{
+	min-width: 800px;
+}
+.scrollx_tbl_lg{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_lg .mCSB_container {
+	min-width: 1000px !important;
+}
+.scrollx_tbl_lg table{
+	min-width: 1000px;
+}
+.scrollx_tbl_xl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xl .mCSB_container {
+	min-width: 1200px !important;
+}
+.scrollx_tbl_xl table{
+	min-width: 1200px;
+}
+.scrollx_tbl_xxl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xxl table{
+	min-width: 1400px;
+}
+.scrollx_tbl_xxl .mCSB_container {
+	min-width: 1400px !important;
+}
+
+.tbl {
+	position: relative;
+}
+.tbl table {
+	width: 100%;
+	text-align: center; font-size: 1.4rem;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.tbl table thead th {
+	padding: 5px;
+	text-align: center; font-weight: 500;
+	background-color: #f1f1f1;
+}
+.tbl table tbody th, .tbl table tfoot th {
+	padding: 5px;
+	text-align: center;
+}
+.tbl table tbody td, .tbl table tfoot td {
+	padding: 5px;
+	text-align: center;
+}
+
+.tbl_row thead th {
+	border: 1px solid #ddd;
+}
+.tbl_row tbody tr th{
+	font-weight: 500;
+	background-color: #f2f2f5;
+	border: 1px solid #ddd;
+}
+.tbl_row tbody tr td {
+	text-align: left;
+	border: 1px solid #ddd;
+}
+.tbl_row tfoot tr th{
+	font-weight: 500;
+	background-color: #f2f2f5;
+	border: 1px solid #ddd;
+}
+.tbl_row tfoot tr td {
+	text-align: left;
+	border: 1px solid #ddd;
+}
+.tbl_row .bg_td {
+	background: #f2f2f5;
+}
+.tbl_fixed table {
+	table-layout: fixed;
+	word-break: break-all;
+}
+
+.tbl_col table {
+	background-color: transparent;
+	border-bottom: 2px solid #fff;
+}
+.tbl_col table thead th {
+	padding: 8px 0;
+	background: rgba(255, 255, 255, 0.3);
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.tbl_col table th {
+	color: #fff; font-weight: 400;
+}
+.tbl_col table td {
+	position: relative;
+}
+.tbl_col .bg_td {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.tbl_white table {
+	background-color: transparent;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+.tbl_white tbody tr th {
+	font-weight: 600;	
+}
+
+table .check_row, table .radio_row {
+    margin: 0 10px 0 0;
+}
